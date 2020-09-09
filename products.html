@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IShop - layout</title>
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/font-awesome.css" rel="stylesheet">
+    <link href="static/css/font-awesome.css" rel="stylesheet">
+    <link href="static/css/app.css" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header" class="">
+
+    </header><!-- /header --> 
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+            <div class="visible-xs-block xs-option-container">
+                <a class="pull-right" data-toggle="collapse" href="#productCatalog">Product Catalog <span class="caret"></span></a>
+                <a data-toggle="collapse" href="#findProducts">Find Products <span class="caret"></span></a>
+            </div>
+            <!-- Search form -->
+            <form action="products.html">
+                <div id="findProducts" class="panel panel-success collapse">
+                    <div class="panel-heading">Find products</div>
+                    <div class="panel-body">
+                        <div class="input-group">
+                            <input type="text" name="query" class="form-control" placeholder="Search query">
+                            <span class="input-group-btn">
+                                <a id="goSearch" class="btn btn-default" type="button">Go!</a>
+                            </span>
+                        </div>
+                        <div class="more-options">
+                            <a data-toggle="collapse" href="#searchOptions">More filters <span class="caret"></span></a>
+                        </div>
+                    </div>
+                    <div id="searchOptions" class="collapse">
+                        <div class="panel-heading">Category filter</div>
+                        <div class="panel-body categories">
+                            <label><input type="checkbox" id="allCategories"> All </label>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="category" value="1" class="search-options">E-book (78)</label>
+                                </div>                                
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="category" value="2" class="search-options">Mp3-player (75)</label>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="panel-heading">Producers filter</div>
+                        <div class="panel-body producers">
+                            <label><input type="checkbox" id="allProducers"> All </label>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="producer" value="1" class="search-options">Dell (56)</label>
+                                </div>                                
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="producer" value="2" class="search-options">Apple (22)</label>
+                                </div>                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+            <!-- /Search form -->
+            <!-- Categories -->
+            <div id="productCatalog" class="panel panel-success collapse">
+                <div class="panel-heading">Product catalog</div>
+                <div class="list-group">
+                  <a href="#" class="list-group-item"><span class="badge">78</span>E-book</a>
+                  <a href="#" class="list-group-item"><span class="badge">75</span>Mp3-player</a>
+                  <a href="#" class="list-group-item"><span class="badge">110</span>Notebook</a>
+                  <a href="#" class="list-group-item"><span class="badge">113</span>Phone</a>
+                  <a href="#" class="list-group-item"><span class="badge">95</span>Smartwatch</a>
+                  <a href="#" class="list-group-item"><span class="badge">211</span>Tablet</a>
+                </div>
+            </div>
+            <!-- /Categories -->
+        </aside>
+        <main class="col-xs-12 col-sm-8 col-md-9 col-lg-10">  
+            <div id="productList">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                        <div id="product1234" class="panel panel-default product">
+                          <div class="panel-body">
+                            <div class="thumbnail">
+                                <img src="media/Samsung-Galaxy-Note-20-Ultra-Bronze-2-600x1200.jpg" alt="Samsung Galaxy Note 20">
+                                <div class="desc">
+                                    <div class="cell">
+                                        <p><span class="title">Details</span>
+                                        Diagonală display (inch): 6.9 Cameră primară (MP): Quad: 108 MP+12 MP+12 MP</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="name">Samsung Galaxy Note 20</h4>
+                            <div class="code">Code: 27056</div>
+                            <div class="price">$ 1500</div>
+                            <a href="" class="btn btn-primary pull-right" data-id-product="1234">Buy</a>
+                            <ul class="list-group">
+                              <li class="list-group-item"><small>Category: </small><span class="category">SmartphoneS</span></li>
+                              <li class="list-group-item"><small>Producer: </small><span class="producer">Samsung</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                        <div id="product1234" class="panel panel-default product">
+                          <div class="panel-body">
+                            <div class="thumbnail">
+                                <img src="media/Huawei-P40-Pro-Silver-frost-2-600x1200.jpg" alt="Huawei P40">
+                                <div class="desc">
+                                    <div class="cell">
+                                        <p><span class="title">Details</span>
+                                        Diagonală display (inch): 6.58 Cameră primară (MP): 50 MP+12 MP+40 MP+TOF 3D</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="name">Huawei P40</h4>
+                            <div class="code">Code: 29500</div>
+                            <div class="price">$ 1100</div>
+                            <a href="" class="btn btn-primary pull-right" data-id-product="1234">Buy</a>
+                            <ul class="list-group">
+                              <li class="list-group-item"><small>Category: </small><span class="category">Huawei</span></li>
+                              <li class="list-group-item"><small>Producer: </small><span class="producer">China</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                        <div id="product1234" class="panel panel-default product">
+                          <div class="panel-body">
+                            <div class="thumbnail">
+                                <img src="media/Huawei-MatePad-Pro-LTE-128GB-Gray-1-600x1200.jpg">
+                                <div class="desc">
+                                    <div class="cell">
+                                        <p><span class="title">Details</span>not in stock</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="name">Amazon Kindle PaperWhite 2018 8GB Black</h4>
+                            <div class="code">Code: 35668</div>
+                            <div class="price">$ 260</div>
+                            <a href="" class="btn btn-primary pull-right" data-id-product="1234">Buy</a>
+                            <ul class="list-group">
+                              <li class="list-group-item"><small>Category: </small><span class="category">Tablets</span></li>
+                              <li class="list-group-item"><small>Producer: </small><span class="producer">Amazon</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                        <div id="product1234" class="panel panel-default product">
+                          <div class="panel-body">
+                            <div class="thumbnail">
+                                <img src="media/Huawei-MediaPad-T5-10-LTE-2-600x1200.jpg" alt="Product name">
+                                <div class="desc">
+                                    <div class="cell">
+                                        <p><span class="title">Details</span>
+                                        Diagonală display (inch): 10.1 Cameră primară (MP): 5 MP</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="name">Huawei MediaPad T5 4G 10" 2/16GB Black</h4>
+                            <div class="code">Code: 18899</div>
+                            <div class="price">$ 285</div>
+                            <a href="" class="btn btn-primary pull-right" data-id-product="1234">Buy</a>
+                            <ul class="list-group">
+                              <li class="list-group-item"><small>Category: </small><span class="category">Tablets</span></li>
+                              <li class="list-group-item"><small>Producer: </small><span class="producer">Huawei</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                        <div id="product1234" class="panel panel-default product">
+                          <div class="panel-body">
+                            <div class="thumbnail">
+                                <img src="media/Samsung-Galaxy-Note-20-Ultra-Bronze-2-600x1200.jpg" alt="Samsung Galaxy Note 20">
+                                <div class="desc">
+                                    <div class="cell">
+                                        <p><span class="title">Details</span>
+                                        Diagonală display (inch): 6.9 Cameră primară (MP): Quad: 108 MP+12 MP+12 MP</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="name">Samsung Galaxy Note 20</h4>
+                            <div class="code">Code: 27056</div>
+                            <div class="price">$ 1500</div>
+                            <a href="" class="btn btn-primary pull-right" data-id-product="1234">Buy</a>
+                            <ul class="list-group">
+                              <li class="list-group-item"><small>Category: </small><span class="category">SmartphoneS</span></li>
+                              <li class="list-group-item"><small>Producer: </small><span class="producer">Samsung</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                        <div id="product1234" class="panel panel-default product">
+                          <div class="panel-body">
+                            <div class="thumbnail">
+                                <img src="media/Huawei-P40-Pro-Silver-frost-2-600x1200.jpg" alt="Huawei P40">
+                                <div class="desc">
+                                    <div class="cell">
+                                        <p><span class="title">Details</span>
+                                        Diagonală display (inch): 6.58 Cameră primară (MP): 50 MP+12 MP+40 MP+TOF 3D</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="name">Huawei P40</h4>
+                            <div class="code">Code: 29500</div>
+                            <div class="price">$ 1100</div>
+                            <a href="" class="btn btn-primary pull-right" data-id-product="1234">Buy</a>
+                            <ul class="list-group">
+                              <li class="list-group-item"><small>Category: </small><span class="category">Huawei</span></li>
+                              <li class="list-group-item"><small>Producer: </small><span class="producer">China</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                        <div id="product1234" class="panel panel-default product">
+                          <div class="panel-body">
+                            <div class="thumbnail">
+                                <img src="media/Amazon-Kindle-Paperwhite-2018-900x1200.jpg">
+                                <div class="desc">
+                                    <div class="cell">
+                                        <p><span class="title">Details</span>not in stock</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="name">Amazon Kindle PaperWhite 2018 8GB Black</h4>
+                            <div class="code">Code: 35668</div>
+                            <div class="price">$ 260</div>
+                            <a href="" class="btn btn-primary pull-right" data-id-product="1234">Buy</a>
+                            <ul class="list-group">
+                              <li class="list-group-item"><small>Category: </small><span class="category">Tablets</span></li>
+                              <li class="list-group-item"><small>Producer: </small><span class="producer">Amazon</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                        <div id="product1234" class="panel panel-default product">
+                          <div class="panel-body">
+                            <div class="thumbnail">
+                                <img src="media/Huawei-MediaPad-T5-10-LTE-2-600x1200.jpg" alt="Product name">
+                                <div class="desc">
+                                    <div class="cell">
+                                        <p><span class="title">Details</span>
+                                        Diagonală display (inch): 10.1 Cameră primară (MP): 5 MP</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="name">Huawei MediaPad T5 4G 10" 2/16GB Black</h4>
+                            <div class="code">Code: 18899</div>
+                            <div class="price">$ 285</div>
+                            <a href="" class="btn btn-primary pull-right" data-id-product="1234">Buy</a>
+                            <ul class="list-group">
+                              <li class="list-group-item"><small>Category: </small><span class="category">Tablets</span></li>
+                              <li class="list-group-item"><small>Producer: </small><span class="producer">Huawei</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                        <div id="product1234" class="panel panel-default product">
+                          <div class="panel-body">
+                            <div class="thumbnail">
+                                <img src="media/Samsung-Galaxy-Note-20-Ultra-Bronze-2-600x1200.jpg" alt="Samsung Galaxy Note 20">
+                                <div class="desc">
+                                    <div class="cell">
+                                        <p><span class="title">Details</span>
+                                        Diagonală display (inch): 6.9 Cameră primară (MP): Quad: 108 MP+12 MP+12 MP</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="name">Samsung Galaxy Note 20</h4>
+                            <div class="code">Code: 27056</div>
+                            <div class="price">$ 1500</div>
+                            <a href="" class="btn btn-primary pull-right" data-id-product="1234">Buy</a>
+                            <ul class="list-group">
+                              <li class="list-group-item"><small>Category: </small><span class="category">SmartphoneS</span></li>
+                              <li class="list-group-item"><small>Producer: </small><span class="producer">Samsung</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                        <div id="product1234" class="panel panel-default product">
+                          <div class="panel-body">
+                            <div class="thumbnail">
+                                <img src="media/Huawei-P40-Pro-Silver-frost-2-600x1200.jpg" alt="Huawei P40">
+                                <div class="desc">
+                                    <div class="cell">
+                                        <p><span class="title">Details</span>
+                                        Diagonală display (inch): 6.58 Cameră primară (MP): 50 MP+12 MP+40 MP+TOF 3D</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="name">Huawei P40</h4>
+                            <div class="code">Code: 29500</div>
+                            <div class="price">$ 1100</div>
+                            <a href="" class="btn btn-primary pull-right" data-id-product="1234">Buy</a>
+                            <ul class="list-group">
+                              <li class="list-group-item"><small>Category: </small><span class="category">Huawei</span></li>
+                              <li class="list-group-item"><small>Producer: </small><span class="producer">China</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                        <div id="product1234" class="panel panel-default product">
+                          <div class="panel-body">
+                            <div class="thumbnail">
+                                <img src="media/Amazon-Kindle-Paperwhite-2018-900x1200.jpg">
+                                <div class="desc">
+                                    <div class="cell">
+                                        <p><span class="title">Details</span>not in stock</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="name">Amazon Kindle PaperWhite 2018 8GB Black</h4>
+                            <div class="code">Code: 35668</div>
+                            <div class="price">$ 260</div>
+                            <a href="" class="btn btn-primary pull-right" data-id-product="1234">Buy</a>
+                            <ul class="list-group">
+                              <li class="list-group-item"><small>Category: </small><span class="category">Tablets</span></li>
+                              <li class="list-group-item"><small>Producer: </small><span class="producer">Amazon</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xlg-2">
+                        <div id="product1234" class="panel panel-default product">
+                          <div class="panel-body">
+                            <div class="thumbnail">
+                                <img src="media/Huawei-MediaPad-T5-10-LTE-2-600x1200.jpg" alt="Product name">
+                                <div class="desc">
+                                    <div class="cell">
+                                        <p><span class="title">Details</span>
+                                        Diagonală display (inch): 10.1 Cameră primară (MP): 5 MP</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="name">Huawei MediaPad T5 4G 10" 2/16GB Black</h4>
+                            <div class="code">Code: 18899</div>
+                            <div class="price">$ 285</div>
+                            <a href="" class="btn btn-primary pull-right" data-id-product="1234">Buy</a>
+                            <ul class="list-group">
+                              <li class="list-group-item"><small>Category: </small><span class="category">Tablets</span></li>
+                              <li class="list-group-item"><small>Producer: </small><span class="producer">Huawei</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="text-center">
+                    <a id="loadMore" class="btn btn-success">Load more products</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <a href="http://google.md" class="text-center">IShop demo for <a href="#" target="_blank">&lt;/&gt;Devstudy.net, 2016</a></a>
+        </div>
+    </footer>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/app.js"></script>
+  </body>
+</html>
